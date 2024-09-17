@@ -30,7 +30,8 @@ if [[ -z "$IP_SUBNET" ]]; then
 fi
 
 # Run masscan with the specified configuration file and IP address/subnet
-masscan -c "$CONFIG_FILE" "$IP_SUBNET"
+masscan -c "$CONFIG_FILE" "$IP_SUBNET" -oL masscan.lst
+cat masscan.lst | gf ip | anew > ip.lst
 
 # Inform the user that the scan is complete
 echo "Masscan scan has been completed."
