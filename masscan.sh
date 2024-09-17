@@ -23,7 +23,7 @@ if [[ -z "$ADAPTER_IP" ]]; then
 fi
 
 # Run masscan with the specified parameters
-masscan --top-ports 100 --rate 10000 --adapter-ip "$ADAPTER_IP" --echo
+masscan --top-ports 1000 --rate 10000 --adapter-ip "$ADAPTER_IP" --echo >top1000.conf
 
 # Inform the user that the scan is complete
 echo "Masscan scan has been completed."
