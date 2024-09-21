@@ -60,7 +60,7 @@ nmap -sn 10.10.10.0/24 -oN hosts.nmap
 
 # Find Common Vulnerabilities
 #### After you have done all of your scans, and identified open ports on your target, it's time to see if any services are vulnerable.
-![image](https://user-images.githubusercontent.com/80599694/147908174-3d6663e0-4049-4471-969c-f43db2c9c74e.png)
+
 
 #### Common Ports to Look at:
 | Port | Protocol |
@@ -313,7 +313,7 @@ john -wordlist /path/to/wordlist -users=users.txt hashfile
 
 # Networking - Routing
 #### I highly recommend that you get comfortable with general networking and routing concepts, including be able to read and understand .PCAP files.
-![image](https://user-images.githubusercontent.com/80599694/147913167-35155f9d-f7f5-473e-90f9-302f0b5d7bb2.png)
+
 
 ### Set up IP Routing and Routing Tables
 ````bash
@@ -353,8 +353,6 @@ hydra -L users.txt -P pass.txt -t 10 10.10.10.10 ssh -s 22
 hydra -L users.txt -P pass.txt telnet://10.10.10.10
 ```
 # Using Metasploit
-#### I highly recommend getting comfortable with metasploit, and meterpreter just incase you find Remote Code Execution, and spawn a shell.
-![image](https://user-images.githubusercontent.com/80599694/147913813-b8f42c43-3377-420f-ad8a-7524f50192ed.png)
 
 ### Basic Metasploit Commands
 ````bash
