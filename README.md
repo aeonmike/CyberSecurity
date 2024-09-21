@@ -132,6 +132,9 @@ ftp-user-enum.pl -U users.txt -t 10.10.10.1
 ftp-user-enum.pl -M iu -U users.txt -t $ip
 ````
 ##### If you do not have ftp-user-enum.pl, you can download it here: https://pentestmonkey.net/tools/ftp-user-enum/ftp-user-enum-1.0.tar.gz
+````bash
+curl -L https://pentestmonkey.net/tools/ftp-user-enum/ftp-user-enum-1.0.tar.gz
+````
 
 #### Useful Commands for FTP Service (cmd line):
 ````bash
@@ -225,8 +228,8 @@ nmap --script smb-vuln* -p 139,445 10.10.10.10
 ````
 
 # Web Application Enumeration / Exploitation - Port 80,443,8080
-#### Make sure that you enumerate, and enumerate some more. :wink:
-![image](https://user-images.githubusercontent.com/80599694/147911298-00e672ff-9bb8-475c-ac03-a00ab3cb170c.png)
+#### Make sure that you enumerate, and enumerate some more. 
+
 ## Web Application Enumeration Checklist:
 ````bash
 1. Checkout the entire webpage and what it is displaying.
@@ -298,8 +301,8 @@ sqlmap -u http://10.10.10.10 --os-shell
 sqlmap -u http://10.10.10.10 --dump
 ````
 # Password Cracking
-#### I highly suggest you learn how to use John The Ripper, Hydra, and how to unshadow passwd files. :wink:
-![image](https://user-images.githubusercontent.com/80599694/147914303-6417c637-a380-41d7-a716-76cbc6b4ff9e.png)
+#### I highly suggest you learn how to use John The Ripper, Hydra, and how to unshadow passwd files. 
+
 
 ### Unshadow
 #### This will prepare the file for John The Ripper, you need a Passwd & Shadow File.
